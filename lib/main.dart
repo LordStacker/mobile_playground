@@ -45,6 +45,34 @@ class MyApp extends StatelessWidget {
                 ));
           }),
         ),
+        floatingActionButton:  FloatingActionButton(
+          onPressed: () { },
+          child: const Icon(Icons.add),
+        ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Business',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'School',
+          ) /*,
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Business',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'School',
+          ),*/
+          ],
+      ),
       ),
     );
   }
